@@ -10,8 +10,8 @@ export const ChatBubble = ({ type, children, className }: ChatBubbleProps) => {
   return (
     <div
       className={cn(
-        "max-w-[85%] animate-fade-in",
-        type === "user" ? "ml-auto" : "mr-auto"
+        "animate-fade-in",
+        type === "user" ? "ml-auto w-fit max-w-[85%]" : "mr-auto max-w-[85%]"
       )}
     >
       <div

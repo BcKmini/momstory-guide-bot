@@ -48,7 +48,10 @@ const Index = () => {
     };
 
     // Prepare answer text for speech (content only, no title or emoji)
-    const answerTextContent = question.answer.content.join(" ");
+    const answerTextContent = question.answer.content
+      .join(" ")
+      .replace(/[\u{1F300}-\u{1F9FF}\u{1F600}-\u{1F64F}\u{1F680}-\u{1F6FF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu, '')
+      .trim();
 
     // Add bot answer
     const botMessage: Message = {
