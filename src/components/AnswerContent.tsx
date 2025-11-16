@@ -23,13 +23,17 @@ export const AnswerContent = ({
         {title}
       </h3>
       
-      {imageUrl && (
+      {imageUrl ? (
         <div className="w-full aspect-video rounded-2xl overflow-hidden border border-border">
           <img 
             src={imageUrl} 
             alt={title}
             className="w-full h-full object-cover"
           />
+        </div>
+      ) : (
+        <div className="w-full aspect-video bg-muted/50 rounded-2xl flex items-center justify-center border-2 border-dashed border-border/50">
+          <span className="text-muted-foreground text-sm">이미지 영역</span>
         </div>
       )}
 
