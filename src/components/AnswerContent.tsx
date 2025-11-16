@@ -1,6 +1,6 @@
 interface AnswerContentProps {
   title: string;
-  imagePlaceholder?: boolean;
+  imageUrl?: string;
   content: React.ReactNode;
   mapLocation?: string;
   isTable?: boolean;
@@ -10,7 +10,7 @@ interface AnswerContentProps {
 
 export const AnswerContent = ({ 
   title, 
-  imagePlaceholder, 
+  imageUrl, 
   content,
   mapLocation,
   isTable,
@@ -23,9 +23,13 @@ export const AnswerContent = ({
         {title}
       </h3>
       
-      {imagePlaceholder && (
-        <div className="w-full aspect-video bg-muted rounded-2xl flex items-center justify-center border-2 border-dashed border-border">
-          <span className="text-muted-foreground text-sm">이미지 영역</span>
+      {imageUrl && (
+        <div className="w-full aspect-video rounded-2xl overflow-hidden border border-border">
+          <img 
+            src={imageUrl} 
+            alt={title}
+            className="w-full h-full object-cover"
+          />
         </div>
       )}
 

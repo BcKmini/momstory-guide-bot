@@ -60,7 +60,7 @@ const Index = () => {
       content: (
         <AnswerContent
           title={question.answer.title}
-          imagePlaceholder={question.answer.imagePlaceholder}
+          imageUrl={question.answer.imageUrl}
           mapLocation={question.answer.mapLocation}
           isTable={question.answer.isTable}
           isLink={question.answer.isLink}
