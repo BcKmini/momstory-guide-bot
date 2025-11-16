@@ -1,6 +1,14 @@
+import eventDateImg from "@/assets/images/event-date.jpg";
+import eventTimeImg from "@/assets/images/event-time.jpg";
+import suppliesImg from "@/assets/images/supplies.jpg";
+import dressCodeImg from "@/assets/images/dress-code.jpg";
+import parkingImg from "@/assets/images/parking.jpg";
+import timetableImg from "@/assets/images/timetable.jpg";
+import inquiryImg from "@/assets/images/inquiry.jpg";
+
 export interface ChatAnswer {
   title: string;
-  imagePlaceholder?: boolean;
+  imageUrl?: string;
   content: string[];
   mapLocation?: string;
   isTable?: boolean;
@@ -23,7 +31,7 @@ export const chatQuestions: ChatQuestion[] = [
     question: "행사 날짜가 언제인가요?",
     answer: {
       title: "🗓 행사 날짜",
-      imagePlaceholder: true,
+      imageUrl: eventDateImg,
       content: ["2025년 10월 18일(토)"]
     }
   },
@@ -34,7 +42,7 @@ export const chatQuestions: ChatQuestion[] = [
     question: "행사 시간이 어떻게 되나요?",
     answer: {
       title: "⏰ 행사 시간",
-      imagePlaceholder: true,
+      imageUrl: eventTimeImg,
       content: [
         "10:00 ~ 13:00",
         "원활한 진행을 위해 9:30까지 입장 부탁드려요!"
@@ -59,7 +67,7 @@ export const chatQuestions: ChatQuestion[] = [
     question: "준비물이 무엇인가요?",
     answer: {
       title: "🎒 준비물",
-      imagePlaceholder: true,
+      imageUrl: suppliesImg,
       content: [
         "• 돗자리",
         "• 쓰레기 비닐",
@@ -77,7 +85,7 @@ export const chatQuestions: ChatQuestion[] = [
     question: "드레스코드가 어떻게 되나요?",
     answer: {
       title: "👕 드레스코드",
-      imagePlaceholder: true,
+      imageUrl: dressCodeImg,
       content: [
         "👶 자녀: 유치원 체육복, 양말, 운동화",
         "",
@@ -94,7 +102,7 @@ export const chatQuestions: ChatQuestion[] = [
     question: "주차 공간이 있나요?",
     answer: {
       title: "🚗 주차 공간",
-      imagePlaceholder: true,
+      imageUrl: parkingImg,
       content: [
         "아이들과 가을 하늘도 보고, 즐거운 대화도 나누며 도보 이동 부탁드립니다!",
         "",
@@ -109,7 +117,7 @@ export const chatQuestions: ChatQuestion[] = [
     question: "행사 타임테이블이 어떻게 되나요?",
     answer: {
       title: "📋 행사 타임테이블",
-      imagePlaceholder: true,
+      imageUrl: timetableImg,
       isTable: true,
       content: [
         "10:00~10:30|등원 및 자리 정돈, 명찰 부착",
@@ -129,7 +137,7 @@ export const chatQuestions: ChatQuestion[] = [
     question: "추가로 궁금한 사항이 있어요.",
     answer: {
       title: "⚠ 추가 문의",
-      imagePlaceholder: true,
+      imageUrl: inquiryImg,
       isLink: true,
       content: [
         "추가로 궁금한 사항은 다른 가족들도 궁금할 수 있으니 함께 공유해주세요!",
