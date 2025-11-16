@@ -1,10 +1,16 @@
-import eventDateImg from "@/assets/images/event-date.jpg";
-import eventTimeImg from "@/assets/images/event-time.jpg";
-import suppliesImg from "@/assets/images/supplies.jpg";
-import dressCodeImg from "@/assets/images/dress-code.jpg";
-import parkingImg from "@/assets/images/parking.jpg";
-import timetableImg from "@/assets/images/timetable.jpg";
-import inquiryImg from "@/assets/images/inquiry.jpg";
+// 이미지를 추가하려면:
+// 1. src/assets/images/ 폴더를 만들고
+// 2. 아래 파일명과 동일하게 이미지를 넣으세요:
+//    - event-date.jpg, event-time.jpg, supplies.jpg, 
+//    - dress-code.jpg, parking.jpg, timetable.jpg, inquiry.jpg
+// 3. 아래 주석을 해제하세요:
+// import eventDateImg from "@/assets/images/event-date.jpg";
+// import eventTimeImg from "@/assets/images/event-time.jpg";
+// import suppliesImg from "@/assets/images/supplies.jpg";
+// import dressCodeImg from "@/assets/images/dress-code.jpg";
+// import parkingImg from "@/assets/images/parking.jpg";
+// import timetableImg from "@/assets/images/timetable.jpg";
+// import inquiryImg from "@/assets/images/inquiry.jpg";
 
 export interface ChatAnswer {
   title: string;
@@ -31,7 +37,7 @@ export const chatQuestions: ChatQuestion[] = [
     question: "행사 날짜가 언제인가요?",
     answer: {
       title: "🗓 행사 날짜",
-      imageUrl: eventDateImg,
+      imageUrl: undefined, // 이미지 추가 후: eventDateImg
       content: ["2025년 10월 18일(토)"]
     }
   },
@@ -42,7 +48,7 @@ export const chatQuestions: ChatQuestion[] = [
     question: "행사 시간이 어떻게 되나요?",
     answer: {
       title: "⏰ 행사 시간",
-      imageUrl: eventTimeImg,
+      imageUrl: undefined, // 이미지 추가 후: eventTimeImg
       content: [
         "10:00 ~ 13:00",
         "원활한 진행을 위해 9:30까지 입장 부탁드려요!"
@@ -67,7 +73,7 @@ export const chatQuestions: ChatQuestion[] = [
     question: "준비물이 무엇인가요?",
     answer: {
       title: "🎒 준비물",
-      imageUrl: suppliesImg,
+      imageUrl: undefined, // 이미지 추가 후: suppliesImg
       content: [
         "• 돗자리",
         "• 쓰레기 비닐",
@@ -85,7 +91,7 @@ export const chatQuestions: ChatQuestion[] = [
     question: "드레스코드가 어떻게 되나요?",
     answer: {
       title: "👕 드레스코드",
-      imageUrl: dressCodeImg,
+      imageUrl: undefined, // 이미지 추가 후: dressCodeImg
       content: [
         "👶 자녀: 유치원 체육복, 양말, 운동화",
         "",
@@ -102,7 +108,7 @@ export const chatQuestions: ChatQuestion[] = [
     question: "주차 공간이 있나요?",
     answer: {
       title: "🚗 주차 공간",
-      imageUrl: parkingImg,
+      imageUrl: undefined, // 이미지 추가 후: parkingImg
       content: [
         "아이들과 가을 하늘도 보고, 즐거운 대화도 나누며 도보 이동 부탁드립니다!",
         "",
@@ -117,7 +123,7 @@ export const chatQuestions: ChatQuestion[] = [
     question: "행사 타임테이블이 어떻게 되나요?",
     answer: {
       title: "📋 행사 타임테이블",
-      imageUrl: timetableImg,
+      imageUrl: undefined, // 이미지 추가 후: timetableImg
       isTable: true,
       content: [
         "10:00~10:30|등원 및 자리 정돈, 명찰 부착",
@@ -137,7 +143,7 @@ export const chatQuestions: ChatQuestion[] = [
     question: "추가로 궁금한 사항이 있어요.",
     answer: {
       title: "⚠ 추가 문의",
-      imageUrl: inquiryImg,
+      imageUrl: undefined, // 이미지 추가 후: inquiryImg
       isLink: true,
       content: [
         "추가로 궁금한 사항은 다른 가족들도 궁금할 수 있으니 함께 공유해주세요!",
