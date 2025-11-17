@@ -25,3 +25,29 @@ dist-ssr
 
 .env
 /.env
+# Python / envs
+env/
+venv/
+.venv/
+ENV
+*.py[cod]
+__pycache__/
+
+# Reports and coverage
+report/
+보고/
+coverage/
+.coverage
+htmlcov/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Testing
+.pytest_cache/
+
+# Database
+*.sqlite3
