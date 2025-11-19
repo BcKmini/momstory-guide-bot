@@ -1,5 +1,4 @@
 import { useState } from "react";
-import BasicMap from "@/components/BasicMap";
 
 interface AnswerContentProps {
   title: string;
@@ -27,8 +26,8 @@ export const AnswerContent = ({
       <h3 className="text-lg font-bold text-primary flex items-center gap-2">{title}</h3>
 
       {showMap ? (
-        <div className="w-full rounded-2xl overflow-hidden border border-border">
-          <BasicMap />
+        <div className="w-full aspect-[4/3] bg-muted/50 rounded-2xl flex items-center justify-center border-2 border-dashed border-border/50">
+          <span className="text-muted-foreground text-sm">지도 영역 A</span>
         </div>
       ) : null}
 
