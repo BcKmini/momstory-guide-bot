@@ -28,7 +28,7 @@ export const AnswerContent = ({
       {showMap ? (
         <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden border border-border">
           <img
-            src="/assets/location-map.png"
+            src="/assets/event-place.jpg"
             alt="행사장 위치 약도"
             className="w-full h-full object-cover"
           />
